@@ -12,6 +12,7 @@ body *{
     font-family: 'Montserrat', sans-serif;
     font-weight: normal;
     font-size: 1em;
+    box-sizing: border-box;
 }
 h1, h2, h3, h4, h5, h6{
     font-family: 'Sanchez', serif;
@@ -86,4 +87,26 @@ blockquote{
       margin-left: 10%;
       margin-right: 15%;
   }
+}
+
+@media (min-width: 1000px)
+{
+  #geral{
+      display: flex;
+      flex-wrap: wrap;
+  }
+  #geral header{
+      flex-basis: 100%;
+  }
+  #geral aside{
+    flex-basis: 25%;
+    background-color: #ccccff;
+    padding-left: 1em;
+    
+  }
+  #geral main{
+    flex-basis: 75%;
+    padding-left: 1em;
+  }
+  
 }
